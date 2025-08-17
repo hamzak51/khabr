@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-color: #121212;
+    color: #E0E0E0;
+    font: 'poppins';
+    a{text-decoration: none;}
+}
+
+main{
+    margin: 2em;
+}
+.spacer-2em{
+    min-height: 2em;
+}
+
+
+.top_headlines{
+    background-color: #1E1E1E;
+    border: solid 2px #1E1E1E;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    padding: 1em;
+    a{
+        display: flex;
+        gap: 2em;
+        text-decoration: none;
+        color: #E0E0E0;
+        font-size: 16px;
+        img{
+            margin-bottom: 1em;
+            border-radius: 1em;
+            object-fit: contain;
+            max-width: 40%;
+        }
+        .container{
+            display: block;
+            h3{font-size: 32px;}
+            p{font-size: 20px;}
+        }
+    }
+
+    .source{
+        display: flex;
+        gap: 1em;
+    }
+}
+
+
+
+.weather_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    p.time{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    h2{
+        font-size: 75px;
+    }
+    .weather{
+        display: flex;
+        background-color: #1E1E1E;
+        border: solid 1px #1E1E1E;
+        border-radius: 1em;
+        padding: 1em;
+        justify-content: end;
+        align-items: flex-end;
+        gap: 1em;
+        img{
+            object-fit: contain;
+            max-height: 100%;
+        }
+        
+        .weather-text{
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            p.city{
+                margin-bottom: 0;
+            }
+            p.current{
+                font-size: 32px;
+                margin-bottom: 0;
+            }
+            p.feellike{
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+            p.humidity{
+                margin-bottom: 0;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.section_home{
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    border: solid 2px #1E1E1E;
+    border-radius: 2em;
+    padding: 2em;
+
+    h2{font-size: 36px; margin-bottom: 1em;}
+
+    .article_container{
+        display: flex;
+        gap: 1em;
+        a{
+            text-decoration: none;
+            color: #E0E0E0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1em;
+            flex: 1;
+            img{border-radius: 1em; object-fit: contain; max-width: 100%;}
+        }
+    }
+
+    a.link{color: #E0E0E0; text-align: center; font-size: 20px; border-top: solid 1px; padding-top: 1em;}
+}
+
+
+.sports_container{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1E1E1E;
+    border: solid 2px #1E1E1E;
+    border-radius: 2em;
+    padding: 2em;
+    max-width: 425px;
+    .article{
+        border-bottom: solid 1px #E0E0E0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        a{
+            display: flex;
+            gap: 1em;
+            align-items: flex-start;
+            justify-content: space-between;
+            img{border-radius: 1em; object-fit: contain; max-width: 40%;}
+            p{font-size: 14px; color: #E0E0E0; text-align: end;}
+        }
+        p{font-size: 10px; text-align: end;}
+    }
+}
+
+
+
+footer{
+    background-color: #0D0D0D;
+    text-align: center;
+    padding: 2em;
+    p{color:#EAEAEA; font-size: 14px; span{color: #FF6EC7;}}
+    .links{
+        display: flex;
+        gap: 1em;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        color: #00F0FF;
+    }
+}
+@media (width<430px){
+    .weather_section{
+        display: block;
+    }
+}

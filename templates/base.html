@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>khabr</title>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/" style="font-size: 36px;"><b>khabr</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pakistan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Technology</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sports">Sports</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="spacer-2em"></div>
+        {% block home_body %} {% endblock%}
+        
+        {% block sports_body %} {% endblock%}
+
+        <!-- {% block test_body %} {% endblock%} -->
+    </main>
+
+    <footer>
+        <p>made by <span>hamza khan</span></p>
+        <div class="links">
+            <a href="https://github.com/hamzak51">github</a>
+            <a href="https://www.linkedin.com/in/hamza-khan-700394265/">linkedin</a>
+            <a href="mailto:hamza_k11@yahoo.com">email</a>
+            <a href="portfolio">portfolio</a>
+        </div>
+    </footer>
+    <!-- {{apiresult}} -->
+    
+</body>
+</html>
