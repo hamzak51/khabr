@@ -20,22 +20,22 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pakistan</a>
+                            <a class="nav-link" href="/pakistan">Pakistan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Trending</a>
+                            <a class="nav-link" href="/trending">Trending</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Business</a>
+                            <a class="nav-link" href="/business">Business</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Technology</a>
+                            <a class="nav-link" href="/technology">Technology</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Entertainment</a>
+                            <a class="nav-link" href="/entertainment">Entertainment</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/sports">Sports</a>
@@ -49,11 +49,23 @@
 
     <main>
         <div class="spacer-2em"></div>
-        {% block home_body %} {% endblock%}
+        <!-- {% block home_body %} {% endblock%} -->
+        
+        {% block pakistan_body %} {% endblock%}
+        
+        {% block trending_body %} {% endblock%}
+        
+        {% block business_body %} {% endblock%}
+        
+        {% block technology_body %} {% endblock%}
+        
+        {% block entertainment_body %} {% endblock%}
         
         {% block sports_body %} {% endblock%}
+        
 
-        <!-- {% block test_body %} {% endblock%} -->
+
+        {% block test_body %} {% endblock%}
     </main>
 
     <footer>
@@ -62,7 +74,7 @@
             <a href="https://github.com/hamzak51">github</a>
             <a href="https://www.linkedin.com/in/hamza-khan-700394265/">linkedin</a>
             <a href="mailto:hamza_k11@yahoo.com">email</a>
-            <a href="portfolio">portfolio</a>
+            <a href="https://hamzakhaninfo.netlify.app/">portfolio</a>
         </div>
     </footer>
     <!-- {{apiresult}} -->

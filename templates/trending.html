@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-{% block sports_body %}
+{% block trending_body %}
 
 
-<h2 style="font-size: 60px; text-align: center; margin-bottom: 1em;">Sports</h2>
+<h2 style="font-size: 60px; text-align: center; margin-bottom: 1em;">Trending</h2>
 
 <div class="category_container">
 
-    {% for article in sports.articles %}
+    {% for article in trending.articles %}
     <div class="article">
         <a href="{{article.url}}">
             <img src="{{article.urlToImage}}" alt="">
