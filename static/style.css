@@ -169,8 +169,37 @@ footer{
         color: #00F0FF;
     }
 }
+
+
+
+
 @media (width<430px){
+
+
     .weather_section{
-        display: block;
+        .title{h2{font-size: 40px;}}
+        .weather{display: none;}
+    }
+
+
+    .top_headlines{
+        a{flex-direction: column; img{max-width: 100%;} .container{h3{margin-bottom: 1em;} p{font-size: 16px;}}}
+        a.detailedarticle{display: none;}
+        .source{justify-content: space-around; p{font-size: 12px;}}
+    }
+
+
+
+    .section_home{
+        .article_container{flex-direction: column; a{border-top: solid 1px darkgray; padding: 1em 0em;}}
+        a.link{font-size: 16px;}
+    }
+
+
+    .category_container{
+        .article{
+            a{flex-direction: column; img{max-width: 100%;} p{text-align: left; font-size: 16px;}}
+            p{text-align: left;}
+        }
     }
 }
