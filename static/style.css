@@ -159,7 +159,7 @@ footer{
     background-color: #0D0D0D;
     text-align: center;
     padding: 2em;
-    p{color:#EAEAEA; font-size: 14px; span{color: #FF6EC7;}}
+    p{color:#EAEAEA; font-size: 14px; span{a{color: #FF6EC7;}}}
     .links{
         display: flex;
         gap: 1em;

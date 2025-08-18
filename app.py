@@ -61,7 +61,7 @@ def sports():
 @app.route("/trending", methods=['GET'])
 def trending():
 
-    sports=requests.get(f'https://newsapi.org/v2/top-headlines?category=general&pageSize=20&apiKey={API_KEY}').json()
+    trending=requests.get(f'https://newsapi.org/v2/top-headlines?category=general&pageSize=20&apiKey={API_KEY}').json()
 
     return render_template("trending.html", trending=trending)
     
