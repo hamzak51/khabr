@@ -198,6 +198,7 @@ footer{
 
     .category_container{
         .article{
+            padding: 1em 0em;
             a{flex-direction: column; img{max-width: 100%;} p{text-align: left; font-size: 16px;}}
             p{text-align: left;}
         }
